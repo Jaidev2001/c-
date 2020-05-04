@@ -10,11 +10,12 @@ int main()
     {
         if(num%i==0)
         {sum=sum+1;
+          cout<<i<<"\n";
            
         }
     }
     if(sum>2)
-    cout<<num<<" NOT PRIME";
+    cout<<num<<"IS NOT PRIME";
     else
     {
         cout<<num<<" IS PRIME";
