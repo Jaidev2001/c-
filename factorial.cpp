@@ -5,7 +5,7 @@ int main()
    int num,fac=1;
    cout<<"enter the number: ";
    cin>>num;
-   cout<<"\nThe factorial of the  number is:";
+   cout<<"\nThe factorial of the  number "<<num<<"! is:";
    for(int i=1;i<=num;i++)
    {  
        
