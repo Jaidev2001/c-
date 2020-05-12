@@ -16,7 +16,7 @@ int main()
         cout<<"\nEnter the maximum number";
         cin>>maxnumber;
         srand((unsigned)time(0));
-        randomnumber=rand()%(maxnumber-minnumber+1);
+        randomnumber=rand()%maxnumber+minnumber;
         for (int i = 1; i <=guesscount; i++)
         {
             cout<<"Enter your guess:";
@@ -36,10 +36,11 @@ int main()
             {
                 cout<<"\nYou are  low";
             }
-            cout<<"\n"<<guesscount-i<<" guess left.\n";
+            cout<<"\n"<<guesscount-i<<" guess left.\n";     
             
         }
-        cout<<"\nEnter 0 to exit or enter other number to play:";
+        cout<<"\nThe correct guess is:"<<randomnumber;
+        cout<<"\n\nEnter 0 to exit or enter other number to play:";
         cin>>n;
         if(n==0)
         {
